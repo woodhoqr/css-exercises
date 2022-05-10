@@ -2,6 +2,13 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+/* Everything is a box 
+* {
+    border: 2px solid red;
+  } 
+ 
+ */
+
 body {
   margin: 0;
   background: #eee;
@@ -12,6 +19,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .profile-image {
@@ -44,5 +55,28 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+  margin-left: -32px;
+}
+
+li {
+  margin: 0 8px;
+}
+
+.side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+
+
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
 }
